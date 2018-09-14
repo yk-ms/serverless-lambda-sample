@@ -29,5 +29,4 @@ jobs:
       - deploy:
           name: Deploy by Serverless Framework
           command: |
-            sls config credentials -k ${AWS_ACCESS_KEY} -s ${AWS_SECRET_KEY} -p aws
             sls deploy --region us-northeast-1
